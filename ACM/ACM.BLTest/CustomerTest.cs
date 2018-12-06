@@ -12,10 +12,10 @@ namespace ACM.BLTest
         {
             //Arrange
             var customer = new Customer();
-            customer.FirstName = "Sandip";
-            customer.LastName = "Patil";
+            customer.FirstName = "Steve";
+            customer.LastName = "Jobs";
 
-            string expected = "Patil,Sandip";
+            string expected = "Jobs,Steve";
 
             //Act
             string actual = customer.FullName;
@@ -29,9 +29,9 @@ namespace ACM.BLTest
         {
             //Arrange
             var customer = new Customer();
-            customer.LastName = "Patil";
+            customer.LastName = "Jobs";
 
-            string expected = "Patil";
+            string expected = "Jobs";
 
             //Act
             string actual = customer.FullName;
@@ -45,9 +45,9 @@ namespace ACM.BLTest
         {
             //Arrange
             var customer = new Customer();
-            customer.FirstName = "Sandip";
+            customer.FirstName = "Steve";
 
-            string expected = "Sandip";
+            string expected = "Steve";
 
             //Act
             string actual = customer.FullName;
