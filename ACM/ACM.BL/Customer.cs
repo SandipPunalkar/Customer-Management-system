@@ -37,5 +37,15 @@ namespace ACM.BL
                 isValid = false;
             return isValid;
         }
+
+        public Customer Retrieve(int customerId)
+        {
+            return new Customer();
+        }
+
+        public bool Save()
+        {
+            return true;
+        }
     }
 }
