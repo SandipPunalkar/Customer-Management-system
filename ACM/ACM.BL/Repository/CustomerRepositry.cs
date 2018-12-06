@@ -14,9 +14,9 @@ namespace ACM.BL.Repository
             Customer customer = new Customer(customerId);
             if (customerId == 1)
             {
-                customer.EmailAddress = "fbaggins@hobbiton.me";
-                customer.FirstName = "Frodo";
-                customer.LastName = "Baggins";
+                customer.EmailAddress = "stevejobs@gmail.com";
+                customer.FirstName = "Steve";
+                customer.LastName = "Jobs";
             }
             return customer;
         }
