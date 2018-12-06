@@ -2,9 +2,6 @@
 {
     public class ProductRepository
     {
-        /// <summary>
-        /// Retrieve one product.
-        /// </summary>
         public Product Retrieve(int productId)
         {
             Product product = new Product(productId);
