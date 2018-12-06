@@ -27,5 +27,15 @@ namespace ACM.BL
                 return fullName;
             }
         }
+
+        public bool Validate()
+        {
+            var isValid = true;
+            if (string.IsNullOrWhiteSpace(LastName))
+                isValid = false;
+            if (string.IsNullOrWhiteSpace(EmailAddress))
+                isValid = false;
+            return isValid;
+        }
     }
 }
