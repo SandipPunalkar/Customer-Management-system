@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ACM.BL
 {
@@ -37,7 +38,10 @@ namespace ACM.BL
                 isValid = false;
             return isValid;
         }
-
+        public List<Customer> Retrieve()
+        {
+            return new List<Customer>();
+        }
         public Customer Retrieve(int customerId)
         {
             return new Customer();
