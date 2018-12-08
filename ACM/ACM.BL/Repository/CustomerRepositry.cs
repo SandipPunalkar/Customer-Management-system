@@ -16,6 +16,11 @@ namespace ACM.BL.Repository
             addressRepository = new AddressRepository();
         }
 
+        public List<Customer> Retrieve()
+        {
+            return new List<Customer>();
+        }
+
         public Customer Retrieve(int customerId)
         {
             Customer customer = new Customer(customerId);
@@ -30,14 +35,25 @@ namespace ACM.BL.Repository
             }
             return customer;
         }
-        public List<Customer> Retrieve()
+
+        public bool Save(Customer customer)
         {
-            return new List<Customer>();
+            var success = true;
+
+            if (customer.HasChanges && customer.IsValid)
+            {
+                if (customer.IsNew)
+                {
+                    // Call an Insert Stored Procedure
+
+                }
+                else
+                {
+                    // Call an Update Stored Procedure
+                }
+            }
+            return success;
         }
 
-        public bool Save()
-        {
-            return true;
-        }
     }
 }

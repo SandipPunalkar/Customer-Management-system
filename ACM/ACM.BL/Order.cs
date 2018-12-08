@@ -20,15 +20,6 @@ namespace ACM.BL
         public List<OrderItem> orderItems { get;private set; }
         public DateTimeOffset? OrderDate { get; set; }
 
-        public Order Retrieve(int orderId)
-        {
-            return new Order();
-        }
-        public bool Save()
-        {
-            return true;
-        }
-
         public override bool Validate()
         {
             var isValid = true;

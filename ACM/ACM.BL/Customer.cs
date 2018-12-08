@@ -43,20 +43,6 @@ namespace ACM.BL
             }
         }
 
-      
-        public List<Customer> Retrieve()
-        {
-            return new List<Customer>();
-        }
-        public Customer Retrieve(int customerId)
-        {
-            return new Customer();
-        }
-
-        public bool Save()
-        {
-            return true;
-        }
         public override bool Validate()
         {
             var isValid = true;
