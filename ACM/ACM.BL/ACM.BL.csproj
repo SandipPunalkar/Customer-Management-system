@@ -44,6 +44,8 @@
     <Compile Include="Address.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Order.cs" />
+    <Compile Include="OrderDisplay.cs" />
+    <Compile Include="OrderDisplayItem.cs" />
     <Compile Include="OrderItem.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
