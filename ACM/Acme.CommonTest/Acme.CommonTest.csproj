@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoggingServiceTest.cs" />
     <Compile Include="StringHandlerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -56,6 +57,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ACM.BL\ACM.BL.csproj">
+      <Project>{87603F56-6593-4325-9E64-9E6811FE5A0C}</Project>
+      <Name>ACM.BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Acme.Common\Acme.Common.csproj">
       <Project>{f6eba376-695e-4ddd-9cb4-259ad282774a}</Project>
       <Name>Acme.Common</Name>
