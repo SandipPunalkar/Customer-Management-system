@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ACM.BL
 {
-    public class Order
+    public class Order :EntityBase
     {
         public Order()
         {
@@ -29,7 +29,7 @@ namespace ACM.BL
             return true;
         }
 
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
@@ -37,5 +37,11 @@ namespace ACM.BL
 
             return isValid;
         }
+
+        public override string ToString()
+        {
+            return OrderDate.Value.Date + " (" + OrderId + ")";
+        }
+
     }
 }

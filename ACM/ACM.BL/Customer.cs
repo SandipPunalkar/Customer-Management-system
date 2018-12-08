@@ -3,7 +3,7 @@
 namespace ACM.BL
 {
 
-    public class Customer
+    public class Customer:EntityBase
     {
         public Customer():this(0)
         {
@@ -43,15 +43,7 @@ namespace ACM.BL
             }
         }
 
-        public bool Validate()
-        {
-            var isValid = true;
-            if (string.IsNullOrWhiteSpace(LastName))
-                isValid = false;
-            if (string.IsNullOrWhiteSpace(EmailAddress))
-                isValid = false;
-            return isValid;
-        }
+      
         public List<Customer> Retrieve()
         {
             return new List<Customer>();
@@ -64,6 +56,20 @@ namespace ACM.BL
         public bool Save()
         {
             return true;
+        }
+        public override bool Validate()
+        {
+            var isValid = true;
+
+            if (string.IsNullOrWhiteSpace(LastName)) isValid = false;
+            if (string.IsNullOrWhiteSpace(EmailAddress)) isValid = false;
+
+            return isValid;
+        }
+
+        public override string ToString()
+        {
+            return FullName;
         }
     }
 }
